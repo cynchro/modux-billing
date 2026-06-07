@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="modux-billing">
+    <rule ref="PSR12"/>
+    <file>src</file>
+    <arg name="colors"/>
+    <arg value="sp"/>
+    <ini name="memory_limit" value="256M"/>
+</ruleset>

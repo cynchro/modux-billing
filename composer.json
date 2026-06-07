@@ -1,0 +1,45 @@
+{
+    "name": "cynchro/modux-billing",
+    "description": "SDK de billing para SaaS multi-tenant: planes, suscripciones y entitlements. Agnóstico de pasarela (Stripe, Mercado Pago).",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["billing", "saas", "subscriptions", "entitlements", "stripe", "mercadopago", "php"],
+    "homepage": "https://github.com/cynchro/modux-billing",
+    "require": {
+        "php": ">=8.2",
+        "ext-pdo": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "phpstan/phpstan": "^2.0",
+        "squizlabs/php_codesniffer": "^3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cynchro\\Billing\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cynchro\\Billing\\Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+        "cynchro/modux-billing-stripe": "Adaptador de pasarela Stripe",
+        "cynchro/modux-billing-mercadopago": "Adaptador de pasarela Mercado Pago (AR)"
+    },
+    "scripts": {
+        "lint": "phpcs",
+        "fix": "phpcbf",
+        "analyse": "phpstan analyse --no-progress",
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
