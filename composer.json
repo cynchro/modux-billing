@@ -27,7 +27,7 @@
     },
     "suggest": {
         "cynchro/modux-billing-stripe": "Adaptador de pasarela Stripe",
-        "cynchro/modux-billing-mercadopago": "Adaptador de pasarela Mercado Pago (AR)"
+        "cynchro/modux-billing-mp": "Adaptador de pasarela Mercado Pago (AR)"
     },
     "scripts": {
         "lint": "phpcs",
